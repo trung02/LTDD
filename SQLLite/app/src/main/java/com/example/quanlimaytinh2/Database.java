@@ -20,7 +20,7 @@ public class Database extends SQLiteOpenHelper {
     }
     //truy van tra ve ket qua: select
     public Cursor getdata(String sql){
-        SQLiteDatabase database= getReadableDatabase();
+        SQLiteDatabase database = getReadableDatabase();
         return database.rawQuery(sql,null);
     }
 
